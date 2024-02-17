@@ -18,7 +18,9 @@ namespace Mission06_Eaton.Models
         [Required]
         public required string Rating { get; set; }
         public bool Edited { get; set; }
+        // the ? allows for nulls
         public string? LentTo { get; set; }
+        // allow only 25 characters
         [StringLength(25)]
         public string? Notes { get; set; }
     }

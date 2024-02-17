@@ -14,6 +14,7 @@ namespace Mission06_Eaton.Controllers
             _context = temp;
         }
 
+        //three views
         public IActionResult Index ()
         {
             return View();
@@ -30,6 +31,7 @@ namespace Mission06_Eaton.Controllers
             return View();
         }
 
+        // post to database and save it
         [HttpPost]
         public IActionResult Form (Application response)
         {
